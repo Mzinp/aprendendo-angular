@@ -1,0 +1,21 @@
+<p>component home</p>
+<p>oi {{ name }}</p>
+
+<button (click)="submit($event)" aria-label="click">click</button>
+
+@if (mostraTitulo == true) {
+  <p>meu titulol</p>
+} @else if (name == 'Mateus') {
+  <h1>titulo {{ name }}</h1>
+} @else {
+  <h1>titulo false</h1>
+}
+@for (item of listItems; track item.id) {
+  <ul>
+    <li>id: {{ item.id }}</li>
+    <li>name: {{ item.name }}</li>
+    <li>email: {{ item.email }}</li>
+  </ul>
+}
+
+<h1>{{ test }}</h1>
